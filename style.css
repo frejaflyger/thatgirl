@@ -1,0 +1,11 @@
+.feel-container, .energy-container, .percent-container, .manifest-container, .done-container {
+	display: none;
+}
+
+.completed-btn {
+	display: none;
+}
+
+.start-container, .feel-container, .energy-container, .percent-container, .manifest-container, .done-container {
+	height: 200px;
+}
