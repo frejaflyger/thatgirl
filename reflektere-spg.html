@@ -1,0 +1,73 @@
+<script>
+    const $ = jQuery;
+    
+    // Button variables, vi henter mine css classes til mine knapper
+    const startBtn = $ ('.start-btn');
+    const feelBtn = $ ('.feel-btn');
+    const energyBtn = $ ('.energy-btn');
+    const percentBtn = $ ('.percent-btn');
+    const manifestBtn = $ ('.manifest-btn');
+    const doneBtn = $ ('.done-btn');
+    
+    // Container variables, vi henter mine css classes til mine containere
+    const startBox = $ ('.start-container');
+    const feelBox = $ ('.feel-container');
+    const energyBox = $ ('.energy-container');
+    const percentBox = $ ('.percent-container');
+    const manifestBox = $ ('.manifest-container');
+    const doneBox = $ ('.done-container');
+    
+        // Button variables for weekly challenge
+    const completedBtn = $ ('.completed-btn');
+     const completeBtn = $ ('.complete-btn');
+    
+    // Vi skifter containerne ud, så man kan gå igennem spørgsmålene. Vi bruger prevent default til at undgå scrolltop
+    startBtn.click(() => {
+        feelBox.show();
+        startBox.hide();
+        event.preventDefault();
+    });
+    
+    feelBtn.click(() => {
+        energyBox.show();
+        feelBox.hide();
+        event.preventDefault();
+    });
+    
+    energyBtn.click(() => {
+        percentBox.show();
+        energyBox.hide();
+        event.preventDefault();
+    });
+    
+    percentBtn.click(() => {
+        manifestBox.show();
+        percentBox.hide();
+        event.preventDefault();
+    });
+    
+    manifestBtn.click(() => {
+        doneBox.show();
+        manifestBox.hide();
+        event.preventDefault();
+    });
+    
+    doneBtn.click(() => {
+        startBox.show();
+        doneBox.hide();
+        event.preventDefault();
+    });
+    
+    // til knap for weekly challenge
+        completeBtn.click(() => {
+        completedBtn.show();
+        completeBtn.hide();
+        event.preventDefault();
+    });
+    
+            completedBtn.click(() => {
+        completeBtn.show();
+        completedBtn.hide();
+        event.preventDefault();
+    });
+</script>
