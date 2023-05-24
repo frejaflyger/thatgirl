@@ -1,0 +1,19 @@
+<p id="greetings" style="color: rgb(140, 176, 121); font-size: 40px; font-weight:300; text-align: center;"></p>
+
+<script>
+var myDate = new Date();
+var hrs = myDate.getHours();
+
+var greet;
+
+if (hrs < 10)
+greet = 'Good Morning';
+else if (hrs >= 10 && hrs <= 13)
+greet = 'Good Day';
+else if (hrs >= 13 && hrs <= 17)
+greet = 'Good Afternoon';
+else if (hrs >= 17 && hrs <= 24)
+greet = 'Good Night';
+
+document.getElementById('greetings').innerHTML = greet;
+</script>
